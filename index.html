@@ -8,394 +8,225 @@
 </head>
 <body>
 
-    <div class="page-wrapper">
+    <main class="page-wrapper">
 
-        <div class="hero-banner">
+        <header class="hero-banner">
             <h1>Empatia e Cooperação</h1>
-            <p>Os caminhos complementares para o desenvolvimento humano e o fortalecimento das nossas comunidades.</p>
-        </div>
+            <p>Caminhos complementares para o desenvolvimento humano e o fortalecimento comunitário.</p>
+        </header>
 
-        <div class="nav-container">
+        <nav class="nav-container" aria-label="Navegação principal">
             <ul>
                 <li><a href="#empatia">A Empatia</a></li>
                 <li><a href="#cooperacao">A Cooperação</a></li>
                 <li><a href="#pilares">Pilares Práticos</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="content-section" id="empatia">
-            <h1>O Poder da Empatia</h1>
-            <p>A empatia vai muito além de "se colocar no lugar do outro". Ela representa a capacidade genuína de compreender o universo emocional, as dores e as perspectivas de alguém sem aplicar julgamentos ou filtros pessoais.</p>
-            <p>No tecido social, a prática empática atua como um lubrificante que reduz os atritos diários, permitindo uma comunicação aberta, acolhedora e profundamente humana.</p>
-        </div>
+        <section class="content-section" id="empatia">
+            <h2>O Poder da Empatia</h2>
+            <p>A empatia vai muito além de "se colocar no lugar do outro": é a capacidade genuína de compreender o universo emocional alheio sem julgamentos.</p>
+            <p>No convívio social, ela reduz atritos e permite uma comunicação aberta, acolhedora e profundamente humana.</p>
+        </section>
 
-        <div class="content-section" id="cooperacao">
-            <h1>A Força da Cooperação</h1>
-            <p>Se a empatia nos faz compreender a necessidade alheia, a cooperação é o motor que transforma esse sentimento em ação conjunta. Cooperar significa operar em conjunto, unindo inteligências e habilidades para alcançar objetivos que seriam inatingíveis individualmente.</p>
-            <p>Em ambientes de trabalho, círculos educacionais ou bairros, a cooperação substitui o desgaste da competição predatória pelo suporte mútuo e resiliente.</p>
-        </div>
+        <section class="content-section" id="cooperacao">
+            <h2>A Força da Cooperação</h2>
+            <p>Se a empatia nos faz compreender a necessidade alheia, a cooperação é a ação conjunta que une inteligências para alcançar objetivos coletivos.</p>
+            <p>Em qualquer ambiente, substitui a competição predatória pelo suporte mútuo e resiliente.</p>
+        </section>
 
-        <div class="content-section" id="pilares">
-            <h1>Ações Práticas para o Cotidiano</h1>
-            <p>Integrar esses dois conceitos na rotina diária exige pequenos hábitos consistentes. Veja como começar a fazer a diferença no seu ciclo de convivência:</p>
-            
-            <ul>
-                <li>
-                    <p><strong>Pratique a escuta ativa:</strong> Ouça as pessoas com o real intuito de compreendê-las, e não apenas esperando a sua vez de responder.</p>
-                </li>
-                <li>
-                    <p><strong>Valide os sentimentos do próximo:</strong> Evite frases que minimizem a dor alheia. Reconhecer a importância do que o outro sente é a base do respeito.</p>
-                </li>
-                <li>
-                    <p><strong>Ofereça ajuda antes de ser solicitado:</strong> Perceba pequenas sobrecargas ao seu redor, seja em casa ou no ambiente profissional, e divida o peso.</p>
-                </li>
+        <section class="content-section" id="pilares">
+            <h2>Ações Práticas para o Cotidiano</h2>
+            <p>Pequenos hábitos diários fortalecem as conexões no seu ciclo social:</p>
+            <ul class="lista-pilares">
+                <li><strong>Escuta ativa:</strong> Ouça com o foco em compreender, não apenas em responder.</li>
+                <li><strong>Validação emocional:</strong> Reconheça e respeite o sentimento do próximo.</li>
+                <li><strong>Ajuda proativa:</strong> Perceba sobrecargas ao seu redor e divida o peso.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="main-footer">
-            <p>&copy; 2026 - Conexão Humana. Conteúdo voltado à conscientização e evolução coletiva.</p>
-        </div>
+        <footer class="main-footer">
+            <p>&copy; 2026 - Conexão Humana. Conteúdo voltado à evolução coletiva.</p>
+        </footer>
 
-    </div>
+    </main>
 
 </body>
-</html>Como um desenvolvedor Front-End sênior, estruturei o projeto focando em semântica clara, acessibilidade nativa e design moderno, utilizando apenas os recursos robustos que o HTML e o CSS puros oferecem.
-
----
-
-## Etapa 1: Esquema Ilustrado (Wireframe Estrutural)
-
-Abaixo está a representação visual da arquitetura da página, mapeando exatamente onde cada uma das tags obrigatórias foi empregada para estruturar o layout.
-
-```text
-+---------------------------------------------------------------------------------------+
-|  <head>                                                                               |
-|    |
-+---------------------------------------------------------------------------------------+
-|  <body>                                                                               |
-|                                                                                       |
-|    <div class="page-wrapper">  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="hero-banner"> (Topo / Banner Inicial)                          |  |
-|      |     <h1>Empatia e Cooperação</h1>                                           |  |
-|      |     <p>Construindo pontes e unindo esforços para um mundo melhor.</p>       |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="nav-container"> (Menu de Navegação Interna)                    |  |
-|      |     <ul>                                                                    |  |
-|      |        <li><a href="#empatia">A Empatia</a></li>                            |  |
-|      |        <li><a href="#cooperacao">A Cooperação</a></li>                      |  |
-|      |        <li><a href="#pilares">Os Pilares</a></li>                           |  |
-|      |     </ul>                                                                   |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="content-section" id="empatia">                                 |  |
-|      |     <h1>O Poder da Empatia</h1>                                             |  |
-|      |     <p>A habilidade de enxergar o mundo sob a perspectiva do outro...</p>   |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="content-section" id="cooperacao">                              |  |
-|      |     <h1>A Força da Cooperação</h1>                                          |  |
-|      |     <p>Quando esforços individuais se unem em prol do coletivo...</p>       |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="content-section" id="pilares">                                 |  |
-|      |     <h1>Ações Práticas para o Cotidiano</h1>                                |  |
-|      |     <p>Pequenos hábitos que geram grandes transformações sociais:</p>       |  |
-|      |     <ul>                                                                    |  |
-|      |        <li><p>Praticar a escuta ativa...</p></li>                           |  |
-|      |        <li><p>Compartilhar conhecimentos...</p></li>                        |  |
-|      |     </ul>                                                                   |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|      +-----------------------------------------------------------------------------+  |
-|      |  <div class="main-footer"> (Rodapé da Página)                               |  |
-|      |     <p>&copy; 2026 - Propósito Coletivo. Desenvolvido com HTML e CSS.</p>   |  |
-|      +-----------------------------------------------------------------------------+  |
-|                                                                                       |
-|    </div>                                                                             |
-|  </body>                                                                              |
-+---------------------------------------------------------------------------------------+
-
-```
-
----
-
-## Etapa 2: Geração dos Arquivos
-
-### 1. `index.html`
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empatia e Cooperação</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="page-wrapper">
-
-        <div class="hero-banner">
-            <h1>Empatia e Cooperação</h1>
-            <p>Os caminhos complementares para o desenvolvimento humano e o fortalecimento das nossas comunidades.</p>
-        </div>
-
-        <div class="nav-container">
-            <ul>
-                <li><a href="#empatia">A Empatia</a></li>
-                <li><a href="#cooperacao">A Cooperação</a></li>
-                <li><a href="#pilares">Pilares Práticos</a></li>
-            </ul>
-        </div>
-
-        <div class="content-section" id="empatia">
-            <h1>O Poder da Empatia</h1>
-            <p>A empatia vai muito além de "se colocar no lugar do outro". Ela representa a capacidade genuína de compreender o universo emocional, as dores e as perspectivas de alguém sem aplicar julgamentos ou filtros pessoais.</p>
-            <p>No tecido social, a prática empática atua como um lubrificante que reduz os atritos diários, permitindo uma comunicação aberta, acolhedora e profundamente humana.</p>
-        </div>
-
-        <div class="content-section" id="cooperacao">
-            <h1>A Força da Cooperação</h1>
-            <p>Se a empatia nos faz compreender a necessidade alheia, a cooperação é o motor que transforma esse sentimento em ação conjunta. Cooperar significa operar em conjunto, unindo inteligências e habilidades para alcançar objetivos que seriam inatingíveis individualmente.</p>
-            <p>Em ambientes de trabalho, círculos educacionais ou bairros, a cooperação substitui o desgaste da competição predatória pelo suporte mútuo e resiliente.</p>
-        </div>
-
-        <div class="content-section" id="pilares">
-            <h1>Ações Práticas para o Cotidiano</h1>
-            <p>Integrar esses dois conceitos na rotina diária exige pequenos hábitos consistentes. Veja como começar a fazer a diferença no seu ciclo de convivência:</p>
-            
-            <ul>
-                <li>
-                    <p><strong>Pratique a escuta ativa:</strong> Ouça as pessoas com o real intuito de compreendê-las, e não apenas esperando a sua vez de responder.</p>
-                </li>
-                <li>
-                    <p><strong>Valide os sentimentos do próximo:</strong> Evite frases que minimizem a dor alheia. Reconhecer a importância do que o outro sente é a base do respeito.</p>
-                </li>
-                <li>
-                    <p><strong>Ofereça ajuda antes de ser solicitado:</strong> Perceba pequenas sobrecargas ao seu redor, seja em casa ou no ambiente profissional, e divida o peso.</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="main-footer">
-            <p>&copy; 2026 - Conexão Humana. Conteúdo voltado à conscientização e evolução coletiva.</p>
-        </div>
-
-    </div>
-
-</body>
-</html>
-
-```
-
----
-
-### 2. `style.css`
-
-```css
-/* ==========================================================================
-   1. RESET E DEFINIÇÕES GLOBAIS
+</html>/* ==========================================================================
+   1. VARIÁVEIS E RESET GLOBAL
    ========================================================================== */
+:root {
+    --primary: #1e3d59;
+    --secondary: #17b978;
+    --secondary-dark: #118a58;
+    --accent: #ffc13b;
+    --bg-body: #f4f7f6;
+    --bg-card: #ffffff;
+    --text: #2c3e50;
+    --footer-bg: #111e25;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding e border não quebrem o tamanho calculado */
+    box-sizing: border-box;
 }
 
-/* Rolagem suave nativa para navegação entre os links âncora */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    /* Pilha de fontes nativas modernas do sistema (alta performance sem requests externos) */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f7f6; /* Tom neutro levemente azulado/esverdeado */
-    color: #2c3e50; /* Cinza escuro com excelente contraste de leitura */
-    line-height: 1.7;
-    padding: 0 15px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0 1rem;
 }
 
 /* ==========================================================================
-   2. ESTRUTURA E ARQUITETURA DE LAYOUT
+   2. LAYOUT E ESTRUTURA
    ========================================================================== */
-div.page-wrapper {
-    max-width: 960px;
-    margin: 40px auto; /* Centraliza horizontalmente e espaça verticalmente */
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave para flutuar o container */
-    overflow: hidden; /* Garante que as bordas arredondadas apareçam nos cantos superiores/inferiores */
+.page-wrapper {
+    max-width: 60rem;
+    margin: 2.5rem auto;
+    background-color: var(--bg-card);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
-/* ==========================================================================
-   3. ESTILIZAÇÃO DE SEÇÕES ESPECÍFICAS
-   ========================================================================== */
-
-/* Topo / Banner Principal */
-div.hero-banner {
-    background-color: #1e3d59; /* Azul escuro corporativo/confiável */
-    color: #ffffff;
-    padding: 60px 40px;
+/* Header / Banner */
+.hero-banner {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 3.5rem 2rem;
     text-align: center;
 }
 
-div.hero-banner h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
+.hero-banner h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
 }
 
-div.hero-banner p {
-    font-size: 1.15rem;
-    color: #ffc13b; /* Tom dourado quente para destacar a mensagem com empatia */
-    max-width: 650px;
+.hero-banner p {
+    font-size: 1.125rem;
+    color: var(--accent);
+    max-width: 40rem;
     margin: 0 auto;
 }
 
-/* Barra de Navegação */
-div.nav-container {
-    background-color: #17b978; /* Verde vibrante, representando ação e cooperação */
-    padding: 0;
+/* Navegação */
+.nav-container {
+    background-color: var(--secondary);
 }
 
-div.nav-container ul {
-    list-style-type: none;
-    display: flex; /* Alinha os itens em linha de forma flexível */
+.nav-container ul {
+    list-style: none;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-div.nav-container li {
-    display: inline-block;
-}
-
-div.nav-container a {
+.nav-container a {
     display: block;
-    padding: 15px 25px;
-    color: #ffffff;
+    padding: 1rem 1.5rem;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.2s ease-in-out; /* Transição para o efeito hover */
+    letter-spacing: 0.05rem;
+    transition: background-color 0.2s ease;
 }
 
-/* Efeito de interatividade nos links (Feedback Visual) */
-div.nav-container a:hover {
-    background-color: #118a58;
+.nav-container a:hover {
+    background-color: var(--secondary-dark);
 }
 
-/* Blocos de Conteúdo Comum */
-div.content-section {
-    padding: 50px 40px;
+/* Seções de Conteúdo */
+.content-section {
+    padding: 3rem 2.5rem;
     border-bottom: 1px solid #eceff1;
 }
 
-/* Estilo para dar destaque sutil ao focar uma seção via link âncora */
-div.content-section:target {
+.content-section:target {
     background-color: #fafffa;
 }
 
-div.content-section h1 {
-    color: #1e3d59;
-    font-size: 1.85rem;
-    margin-bottom: 20px;
+.content-section h2 {
+    color: var(--primary);
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
-/* Linha decorativa abaixo dos títulos das seções */
-div.content-section h1::after {
+.content-section h2::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 4px;
-    background-color: #17b978;
-    border-radius: 2px;
+    width: 3.75rem;
+    height: 0.25rem;
+    background-color: var(--secondary);
+    border-radius: 0.125rem;
 }
 
-div.content-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    text-align: justify; /* Alinhamento elegante do texto corrido */
+.content-section p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
 }
 
-/* Estilização específica das listas de tópicos práticos */
-div.content-section ul {
-    list-style-type: none; /* Remove as bolinhas padrão para usarmos um marcador personalizado */
-    margin-top: 15px;
+/* Lista de Tópicos */
+.lista-pilares {
+    list-style: none;
+    margin-top: 1rem;
 }
 
-div.content-section li {
+.lista-pilares li {
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 15px;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
-/* Criando um marcador personalizado em CSS puro */
-div.content-section li::before {
+.lista-pilares li::before {
     content: "■";
     position: absolute;
     left: 0;
-    top: 0;
-    color: #17b978;
-    font-size: 1.1rem;
-}
-
-div.content-section li p {
-    margin-bottom: 0; /* Corrige margem interna para alinhar perfeitamente à lista */
-    text-align: left;
+    color: var(--secondary);
 }
 
 /* Rodapé */
-div.main-footer {
-    background-color: #111e25;
+.main-footer {
+    background-color: var(--footer-bg);
     color: #b0bec5;
     text-align: center;
-    padding: 25px 20px;
-    font-size: 0.95rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
 }
 
 /* ==========================================================================
-   4. ADAPTAÇÃO E RESPONSIVIDADE (MOBILE FIRST/FLEXÍVEL)
+   3. RESPONSIVIDADE (MOBILE)
    ========================================================================== */
-@media (max-width: 680px) {
-    div.page-wrapper {
-        margin: 15px auto;
+@media (max-width: 42.5rem) {
+    .page-wrapper {
+        margin: 1rem auto;
     }
 
-    div.hero-banner {
-        padding: 40px 20px;
+    .hero-banner, .content-section {
+        padding: 2rem 1.25rem;
     }
 
-    div.hero-banner h1 {
-        font-size: 1.9rem;
+    .hero-banner h1 {
+        font-size: 1.75rem;
     }
 
-    div.nav-container ul {
-        flex-direction: column; /* Transforma o menu horizontal em vertical no celular */
+    .nav-container ul {
+        flex-direction: column;
     }
 
-    div.nav-container a {
+    .nav-container a {
         text-align: center;
-        padding: 12px 15px;
-        border-bottom: 1px solid #149d66;
-    }
-
-    div.content-section {
-        padding: 35px 20px;
+        border-bottom: 1px solid var(--secondary-dark);
     }
 }
-
-```
