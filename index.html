@@ -229,4 +229,336 @@ body {
         text-align: center;
         border-bottom: 1px solid var(--secondary-dark);
     }
+}<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empatia e Cooperação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Link de Acessibilidade para Leitores de Tela e Teclado -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="page-wrapper">
+
+        <header class="hero-banner">
+            <span class="badge">Evolução Coletiva</span>
+            <h1>Empatia e Cooperação</h1>
+            <p>Caminhos complementares para o desenvolvimento humano e o fortalecimento das nossas comunidades.</p>
+        </header>
+
+        <nav class="nav-container" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#empatia">A Empatia</a></li>
+                <li><a href="#cooperacao">A Cooperação</a></li>
+                <li><a href="#pilares">Pilares Práticos</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-content">
+            <section class="content-section" id="empatia" aria-labelledby="title-empatia">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <h2 id="title-empatia">O Poder da Empatia</h2>
+                <p>A empatia vai muito além de "se colocar no lugar do outro": é a capacidade genuína de compreender o universo emocional alheio sem julgamentos ou filtros pessoais.</p>
+                <p>No convívio social, ela reduz atritos e permite uma comunicação aberta, acolhedora e profundamente humana.</p>
+            </section>
+
+            <section class="content-section" id="cooperacao" aria-labelledby="title-cooperacao">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h2 id="title-cooperacao">A Força da Cooperação</h2>
+                <p>Se a empatia nos faz compreender a necessidade alheia, a cooperação é o motor que transforma esse sentimento em ação conjunta, unindo inteligências em prol do coletivo.</p>
+                <p>Em qualquer ambiente, substitui o desgaste da competição predatória pelo suporte mútuo e resiliente.</p>
+            </section>
+
+            <section class="content-section" id="pilares" aria-labelledby="title-pilares">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <h2 id="title-pilares">Ações Práticas para o Cotidiano</h2>
+                <p>Pequenos hábitos diários geram grandes transformações nas suas relações:</p>
+                
+                <ul class="lista-pilares">
+                    <li>
+                        <strong>Escuta ativa:</strong> Ouça as pessoas com o real intuito de compreendê-las, e não apenas esperando sua vez de responder.
+                    </li>
+                    <li>
+                        <strong>Validação emocional:</strong> Reconheça a dor e os sentimentos do próximo como legítimos e dignos de respeito.
+                    </li>
+                    <li>
+                        <strong>Ajuda proativa:</strong> Perceba sobrecargas ao seu redor, em casa ou no trabalho, e ofereça suporte antes de ser solicitado.
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 - Conexão Humana. Desenvolvido com foco em acessibilidade e empatia.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+/* ==========================================================================
+   1. VARIÁVEIS, CORES E RESET
+   ========================================================================== */
+:root {
+    --primary: #0f2c59;
+    --primary-light: #1e40af;
+    --secondary: #059669;
+    --secondary-hover: #047857;
+    --accent: #f59e0b;
+    --bg-gradient: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 50%, #dcfce7 100%);
+    --bg-card: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --focus-ring: #2563eb;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    line-height: 1.7;
+    padding: 1.5rem 1rem;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. RECURSOS EXCLUSIVOS DE ACESSIBILIDADE (A11Y)
+   ========================================================================== */
+
+/* Atalho para navegação via teclado */
+.skip-link {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    background: var(--focus-ring);
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* Indicador de foco visível de alto contraste */
+:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 4px;
+    border-radius: 0.25rem;
+}
+
+/* ==========================================================================
+   3. ESTRUTURA E DECORAÇÃO VISUAL
+   ========================================================================== */
+
+.page-wrapper {
+    max-width: 58rem;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Header / Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #ffffff;
+    padding: 4rem 2rem 3.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+.hero-banner h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+}
+
+.hero-banner p {
+    font-size: 1.15rem;
+    color: #e0e7ff;
+    max-width: 38rem;
+    margin: 0 auto;
+}
+
+/* Menu de Navegação */
+.nav-container {
+    background-color: var(--secondary);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-container a {
+    display: block;
+    padding: 1.1rem 1.75rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.nav-container a:hover {
+    background-color: var(--secondary-hover);
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 3.5rem 3rem;
+    border-bottom: 1px solid #f3f4f6;
+    transition: background-color 0.3s ease;
+}
+
+.content-section:hover {
+    background-color: #fafafa;
+}
+
+.content-section:target {
+    background-color: #f0fdf4;
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    from { background-color: #dcfce7; }
+    to { background-color: #f0fdf4; }
+}
+
+/* Ícones decorativos */
+.icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: #ecfdf5;
+    color: var(--secondary);
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.content-section h2 {
+    color: var(--primary);
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Lista estilizada em cards */
+.lista-pilares {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.lista-pilares li {
+    background-color: #f9fafb;
+    border-left: 4px solid var(--secondary);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lista-pilares li:hover {
+    transform: translateX(6px);
+    box-shadow: var(--shadow-sm);
+    background-color: #ffffff;
+}
+
+.lista-pilares strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: var(--primary);
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   4. RESPONSIVIDADE
+   ========================================================================== */
+@media (max-width: 48rem) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .hero-banner, .content-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+    }
+
+    .nav-container a {
+        text-align: center;
+        border-bottom: 1px solid var(--secondary-hover);
+    }
 }
