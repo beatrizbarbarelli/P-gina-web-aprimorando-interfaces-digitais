@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empatia e Cooperação</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -11,11 +15,17 @@
 
     <div class="page-wrapper">
         <header class="hero-banner">
-            <button id="theme-toggle" class="theme-btn" aria-label="Alternar modo escuro">
-                <span id="theme-icon" aria-hidden="true">🌙</span> Modo Escuro
-            </button>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" class="control-btn" aria-label="Alternar modo escuro">
+                    <span id="theme-icon" aria-hidden="true">🌙</span> <span class="btn-text">Modo Escuro</span>
+                </button>
+                <button id="font-toggle" class="control-btn" aria-label="Aumentar tamanho do texto">
+                    <span aria-hidden="true">🔍</span> <span class="font-btn-text">Aumentar Fonte</span>
+                </button>
+            </div>
+
             <span class="badge">Evolução Coletiva</span>
-            <h1>Empatia e Cooperação</h1>
+            <h1>Empatia e <span class="highlight-pink">Cooperação</span></h1>
             <p>Caminhos para o desenvolvimento humano e comunitário.</p>
         </header>
 
@@ -34,7 +44,9 @@
                     <p>Compreender o universo emocional do outro sem julgamentos fortalece o diálogo humano.</p>
                 </div>
                 <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" alt="Pessoas conversando">
+                    <a href="https://unsplash.com/photos/5c0ba140b2b8" target="_blank" rel="noopener noreferrer">
+                        <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" alt="Pessoas conversando">
+                    </a>
                 </div>
             </section>
 
@@ -44,7 +56,9 @@
                     <p>Unir inteligências para metas coletivas substitui a competição pelo suporte mútuo.</p>
                 </div>
                 <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Mãos unidas em equipe">
+                    <a href="https://unsplash.com/photos/009f0129c71c" target="_blank" rel="noopener noreferrer">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Mãos unidas em equipe">
+                    </a>
                 </div>
             </section>
 
@@ -52,7 +66,9 @@
                 <h2>Ações Práticas</h2>
                 <div class="grid-cards">
                     <article class="card">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Conversa entre duas pessoas">
+                        <a href="https://unsplash.com/photos/b8d87734a5a2" target="_blank" rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Conversa entre duas pessoas">
+                        </a>
                         <div class="card-body">
                             <h3>Escuta Ativa</h3>
                             <p>Ouça para compreender, não apenas para responder.</p>
@@ -60,7 +76,9 @@
                     </article>
 
                     <article class="card">
-                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" alt="Apoio emocional">
+                        <a href="https://unsplash.com/photos/0ba58a3f068b" target="_blank" rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" alt="Apoio emocional">
+                        </a>
                         <div class="card-body">
                             <h3>Validação Emocional</h3>
                             <p>Respeite e acolha os sentimentos do próximo.</p>
@@ -68,7 +86,9 @@
                     </article>
 
                     <article class="card">
-                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="Trabalho comunitário">
+                        <a href="https://unsplash.com/photos/cd4628902d4a" target="_blank" rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="Trabalho comunitário">
+                        </a>
                         <div class="card-body">
                             <h3>Ajuda Proativa</h3>
                             <p>Ofereça suporte antes mesmo de ser solicitado.</p>
@@ -83,183 +103,40 @@
         </footer>
     </div>
 
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-            themeIcon.textContent = isDark ? '☀️' : '🌙';
-            toggleBtn.lastChild.textContent = isDark ? ' Modo Claro' : ' Modo Escuro';
-            toggleBtn.setAttribute('aria-label', isDark ? 'Alternar modo claro' : 'Alternar modo escuro');
-        });
-    <
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empatia e Cooperação - Evolução Coletiva</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Fontes do Google: Poppins e Outfit para visual elegante -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- Atalho de acessibilidade -->
-    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
-
-    <div class="container">
-        
-        <!-- Cabeçalho Principal -->
-        <header class="header">
-            <div class="header__topo">
-                <span class="badge">Evolução Coletiva</span>
-                
-                <!-- Botão de Modo Escuro -->
-                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo escuro">
-                    <span class="theme-toggle__icon">🌙</span>
-                    <span class="theme-toggle__text">Modo Escuro</span>
-                </button>
-            </div>
-
-            <h1 class="header__titulo">Empatia & <span class="destaque-rosa">Cooperação</span></h1>
-            <p class="header__subtitulo">Caminhos para o desenvolvimento humano e comunitário.</p>
-        </header>
-
-        <!-- Navegação Principal -->
-        <nav class="nav" aria-label="Navegação principal">
-            <ul class="nav__lista">
-                <li><a href="#empatia" class="nav__link">Empatia</a></li>
-                <li><a href="#cooperacao" class="nav__link">Cooperação</a></li>
-                <li><a href="#pilares" class="nav__link">Ações</a></li>
-            </ul>
-        </nav>
-
-        <!-- Conteúdo Principal -->
-        <main id="main-content">
-            
-            <!-- Seção 1: Empatia -->
-            <section id="empatia" class="secao">
-                <div class="secao__texto">
-                    <h2>O Poder da Empatia</h2>
-                    <p>Compreender o universo emocional do outro sem julgamentos fortalece o diálogo humano e constrói laços genuínos.</p>
-                </div>
-                <div class="secao__imagem">
-                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" alt="Pessoas conversando amigavelmente em grupo">
-                </div>
-            </section>
-
-            <!-- Seção 2: Cooperação -->
-            <section id="cooperacao" class="secao secao--invertida">
-                <div class="secao__texto">
-                    <h2>A Força da Cooperação</h2>
-                    <p>Unir inteligências para metas coletivas substitui a competição pelo suporte mútuo, transformando desafios em conquistas.</p>
-                </div>
-                <div class="secao__imagem">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Mãos unidas no centro demonstrando trabalho em equipe">
-                </div>
-            </section>
-
-            <!-- Seção 3: Ações Práticas (Cards) -->
-            <section id="pilares" class="secao-acoes">
-                <div class="secao-acoes__cabecalho">
-                    <span class="subtitulo-rosa">Práticas do dia a dia</span>
-                    <h2 class="secao-acoes__titulo">Ações Práticas</h2>
-                </div>
-                
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card__imagem-wrapper">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Conversa entre duas pessoas em escuta ativa">
-                            <span class="card__tag">Pilar 01</span>
-                        </div>
-                        <div class="card__conteudo">
-                            <h3>Escuta Ativa</h3>
-                            <p>Ouça para compreender, não apenas para responder. Esteja presente por inteiro.</p>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__imagem-wrapper">
-                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" alt="Pessoas oferecendo apoio emocional e acolhimento">
-                            <span class="card__tag">Pilar 02</span>
-                        </div>
-                        <div class="card__conteudo">
-                            <h3>Validação Emocional</h3>
-                            <p>Respeite e acolha os sentimentos do próximo, criando um espaço seguro.</p>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__imagem-wrapper">
-                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="Grupo realizando trabalho voluntário comunitário">
-                            <span class="card__tag">Pilar 03</span>
-                        </div>
-                        <div class="card__conteudo">
-                            <h3>Ajuda Proativa</h3>
-                            <p>Ofereça suporte antes mesmo de ser solicitado. Pequenos gestos geram grandes impactos.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Rodapé -->
-        <footer class="footer">
-            <p>© Conexão Humana. Projeto desenvolvido para o curso Alura.</p>
-        </footer>
-    </div>
-
-    <!-- Script JavaScript para o Modo Escuro -->
     <script src="script.js"></script>
 </body>
-</html>/* ==========================================================
-   VARIÁVEIS CSS (PALETA ROSA & MODO CLARO/ESCURO)
-   ========================================================== */
+</html>
 :root {
-    /* Modo Claro (Rosa Soft & Elegante) */
-    --cor-fundo: #fff1f2;
-    --cor-superficie: #ffffff;
-    --cor-primaria: #e11d48;
-    --cor-primaria-hover: #be123c;
-    --cor-rosa-suave: #fce7f3;
-    --cor-rosa-borda: #fbcfe8;
-    --cor-texto: #331825;
-    --cor-texto-suave: #704a5e;
-    --cor-borda: #f472b6;
-    
-    --sombra-card: 0 10px 25px -5px rgba(225, 29, 72, 0.08), 0 4px 6px -2px rgba(225, 29, 72, 0.04);
-    --sombra-hover: 0 20px 30px -10px rgba(225, 29, 72, 0.2);
-    --raio-borda: 20px;
-    --fonte-titulos: 'Outfit', sans-serif;
-    --fonte-corpo: 'Poppins', sans-serif;
+    --bg-page: #fff1f2;
+    --bg-surface: #ffffff;
+    --primary-rose: #e11d48;
+    --primary-rose-hover: #be123c;
+    --pink-soft: #fce7f3;
+    --pink-border: #fbcfe8;
+    --text-main: #331825;
+    --text-muted: #704a5e;
+    --card-shadow: 0 10px 25px -5px rgba(225, 29, 72, 0.08);
+    --card-hover-shadow: 0 20px 30px -10px rgba(225, 29, 72, 0.2);
+    --font-size-base: 1rem;
 }
 
-/* Modo Escuro (Dark Rose Aesthetic) */
 body.dark-mode {
-    --cor-fundo: #190c12;
-    --cor-superficie: #2a1520;
-    --cor-primaria: #fb7185;
-    --cor-primaria-hover: #f43f5e;
-    --cor-rosa-suave: #3d1c2b;
-    --cor-rosa-borda: #542239;
-    --cor-texto: #fff1f2;
-    --cor-texto-suave: #fda4af;
-    --cor-borda: #881337;
-    
-    --sombra-card: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-    --sombra-hover: 0 20px 30px -10px rgba(251, 113, 133, 0.25);
+    --bg-page: #180911;
+    --bg-surface: #28111d;
+    --primary-rose: #fb7185;
+    --primary-rose-hover: #f43f5e;
+    --pink-soft: #3d1727;
+    --pink-border: #591e38;
+    --text-main: #fff1f2;
+    --text-muted: #fda4af;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    --card-hover-shadow: 0 20px 30px -10px rgba(251, 113, 133, 0.25);
 }
 
-/* ==========================================================
-   RESET & BASE
-   ========================================================== */
+body.large-font {
+    --font-size-base: 1.2rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -268,317 +145,242 @@ body.dark-mode {
 
 html {
     scroll-behavior: smooth;
+    font-size: var(--font-size-base);
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    font-family: var(--fonte-corpo);
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease, font-size 0.3s ease;
 }
 
-.container {
-    max-width: 1100px;
+.page-wrapper {
+    max-width: 1080px;
     margin: 0 auto;
     padding: 24px;
 }
 
-/* ==========================================================
-   ACESSIBILIDADE
-   ========================================================== */
 .skip-link {
     position: absolute;
     top: -100px;
     left: 20px;
-    background: var(--cor-primaria);
-    color: #ffffff;
-    padding: 12px 24px;
-    z-index: 100;
-    border-radius: 12px;
+    background: var(--primary-rose);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    transition: top 0.3s ease;
+    z-index: 100;
 }
 
 .skip-link:focus {
     top: 20px;
 }
 
-/* ==========================================================
-   CABEÇALHO & BOTÃO DE MODO ESCURO
-   ========================================================== */
-.header {
+.hero-banner {
     text-align: center;
-    padding: 30px 0 20px;
+    padding: 40px 0 20px;
+    position: relative;
 }
 
-.header__topo {
+.accessibility-controls {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
-.badge {
-    background-color: var(--cor-rosa-suave);
-    color: var(--cor-primaria);
-    font-size: 0.875rem;
-    font-weight: 600;
-    padding: 8px 18px;
-    border-radius: 9999px;
-    border: 1px solid var(--cor-rosa-borda);
-    box-shadow: 0 2px 8px rgba(225, 29, 72, 0.1);
-}
-
-.theme-toggle {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--cor-superficie);
-    color: var(--cor-texto);
-    border: 1px solid var(--cor-rosa-borda);
+.control-btn {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--pink-border);
     padding: 8px 16px;
     border-radius: 9999px;
     cursor: pointer;
-    font-family: var(--fonte-corpo);
     font-weight: 600;
-    font-size: 0.9rem;
-    box-shadow: var(--sombra-card);
-    transition: all 0.3s ease;
+    font-family: inherit;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.theme-toggle:hover {
-    transform: scale(1.05);
-    border-color: var(--cor-primaria);
+.control-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-rose);
 }
 
-.header__titulo {
-    font-family: var(--fonte-titulos);
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    letter-spacing: -0.5px;
-}
-
-.destaque-rosa {
-    color: var(--cor-primaria);
-    position: relative;
+.badge {
     display: inline-block;
+    background-color: var(--pink-soft);
+    color: var(--primary-rose);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    border: 1px solid var(--pink-border);
+    margin-bottom: 16px;
 }
 
-.header__subtitulo {
+.hero-banner h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.highlight-pink {
+    color: var(--primary-rose);
+}
+
+.hero-banner p {
+    color: var(--text-muted);
     font-size: 1.15rem;
-    color: var(--cor-texto-suave);
 }
 
-/* ==========================================================
-   NAVEGAÇÃO
-   ========================================================== */
-.nav {
+.nav-container {
     margin: 28px 0 48px;
 }
 
-.nav__lista {
+.nav-container ul {
     display: flex;
     justify-content: center;
     gap: 16px;
     list-style: none;
 }
 
-.nav__link {
+.nav-container a {
     text-decoration: none;
-    color: var(--cor-texto);
+    color: var(--text-main);
     font-weight: 600;
-    padding: 10px 28px;
+    padding: 10px 24px;
     border-radius: 9999px;
-    background-color: var(--cor-superficie);
-    border: 1px solid var(--cor-rosa-borda);
-    box-shadow: var(--sombra-card);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--pink-border);
+    box-shadow: var(--card-shadow);
     transition: all 0.3s ease;
 }
 
-.nav__link:hover,
-.nav__link:focus {
-    background-color: var(--cor-primaria);
+.nav-container a:hover {
+    background-color: var(--primary-rose);
     color: #ffffff;
-    border-color: var(--cor-primaria);
-    transform: translateY(-2px);
+    border-color: var(--primary-rose);
 }
 
-/* ==========================================================
-   SEÇÕES DE CONTEÚDO (EMPATIA E COOPERAÇÃO)
-   ========================================================== */
-.secao {
+.content-section {
+    background-color: var(--bg-surface);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--pink-border);
+    margin-bottom: 32px;
+    box-shadow: var(--card-shadow);
+    transition: border-color 0.3s ease;
+}
+
+.content-section:hover {
+    border-color: var(--primary-rose);
+}
+
+.media-grid {
     display: flex;
     align-items: center;
     gap: 40px;
-    background-color: var(--cor-superficie);
-    padding: 40px;
-    border-radius: var(--raio-borda);
-    border: 1px solid var(--cor-rosa-borda);
-    margin-bottom: 32px;
-    box-shadow: var(--sombra-card);
-    transition: transform 0.3s ease, background-color 0.4s ease, border-color 0.4s ease;
 }
 
-.secao:hover {
-    border-color: var(--cor-primaria);
-}
-
-.secao--invertida {
+.media-grid.reverse {
     flex-direction: row-reverse;
 }
 
-.secao__texto {
+.text-block {
     flex: 1;
 }
 
-.secao__texto h2 {
-    font-family: var(--fonte-titulos);
+.text-block h2 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--primary-rose);
     font-size: 2rem;
     margin-bottom: 16px;
-    color: var(--cor-primaria);
 }
 
-.secao__texto p {
+.text-block p {
+    color: var(--text-muted);
     font-size: 1.1rem;
-    color: var(--cor-texto-suave);
 }
 
-.secao__imagem {
+.image-wrapper {
     flex: 1;
 }
 
-.secao__imagem img {
+.image-wrapper img, .card img {
     width: 100%;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
 }
 
-/* ==========================================================
-   AÇÕES PRÁTICAS (CARDS EM GRID)
-   ========================================================== */
-.secao-acoes {
-    margin-top: 56px;
+.image-wrapper img:hover, .card img:hover {
+    transform: scale(1.02);
 }
 
-.secao-acoes__cabecalho {
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.subtitulo-rosa {
-    color: var(--cor-primaria);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.85rem;
-}
-
-.secao-acoes__titulo {
-    font-family: var(--fonte-titulos);
+.pilares-section h2 {
+    font-family: 'Outfit', sans-serif;
     font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 32px;
 }
 
-.cards-grid {
+.grid-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 .card {
-    background-color: var(--cor-superficie);
-    border-radius: var(--raio-borda);
-    border: 1px solid var(--cor-rosa-borda);
+    background-color: var(--bg-surface);
+    border-radius: 16px;
+    border: 1px solid var(--pink-border);
     overflow: hidden;
-    box-shadow: var(--sombra-card);
-    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--sombra-hover);
-    border-color: var(--cor-primaria);
-}
-
-.card__imagem-wrapper {
-    position: relative;
+    transform: translateY(-6px);
+    box-shadow: var(--card-hover-shadow);
+    border-color: var(--primary-rose);
 }
 
 .card img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
+    height: 200px;
+    border-radius: 0;
 }
 
-.card__tag {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background-color: rgba(225, 29, 72, 0.85);
-    backdrop-filter: blur(4px);
-    color: #ffffff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 4px 12px;
-    border-radius: 9999px;
-}
-
-.card__conteudo {
+.card-body {
     padding: 24px;
 }
 
-.card__conteudo h3 {
-    font-family: var(--fonte-titulos);
-    font-size: 1.35rem;
-    margin-bottom: 10px;
-    color: var(--cor-texto);
+.card-body h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
 }
 
-.card__conteudo p {
-    color: var(--cor-texto-suave);
-    font-size: 0.95rem;
+.card-body p {
+    color: var(--text-muted);
 }
 
-/* ==========================================================
-   RODAPÉ
-   ========================================================== */
-.footer {
+.main-footer {
     text-align: center;
-    padding: 40px 0 20px;
-    color: var(--cor-texto-suave);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--cor-rosa-borda);
-    margin-top: 60px;
+    padding: 30px 0;
+    color: var(--text-muted);
+    border-top: 1px solid var(--pink-border);
+    margin-top: 48px;
 }
 
-/* ==========================================================
-   RESPONSIVIDADE (MOBILE & TABLET)
-   ========================================================== */
 @media (max-width: 768px) {
-    .header__topo {
+    .media-grid, .media-grid.reverse {
         flex-direction: column;
-        gap: 16px;
     }
-
-    .header__titulo {
-        font-size: 2rem;
-    }
-
-    .secao,
-    .secao--invertida {
-        flex-direction: column;
-        padding: 24px;
-    }
-
-    .secao__imagem img {
-        height: 220px;
-    }
-
-    .nav__lista {
-        flex-wrap: wrap;
+    .accessibility-controls {
+        justify-content: center;
     }
 }
